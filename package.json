@@ -1,0 +1,81 @@
+{
+  "name": "@noxgild/cli",
+  "version": "1.0.1",
+  "description": "Connect Windows, macOS, or Linux computers to Noxgild for controlled MCP access to Machine, Browser, and Desktop capabilities.",
+  "type": "module",
+  "bin": {
+    "noxgild": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "cpu": [
+    "arm64",
+    "x64"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noxgild/noxgild-cli.git"
+  },
+  "homepage": "https://noxgild.com",
+  "bugs": {
+    "url": "https://github.com/Noxgild/noxgild-cli/issues"
+  },
+  "keywords": [
+    "noxgild",
+    "mcp",
+    "mcp-server",
+    "remote-mcp",
+    "model-context-protocol",
+    "ai-agent",
+    "ai-tools",
+    "computer-use",
+    "computer-control",
+    "remote-computer",
+    "remote-desktop",
+    "desktop-automation",
+    "browser-automation",
+    "cloud-browser",
+    "terminal",
+    "filesystem",
+    "chatgpt",
+    "claude",
+    "cursor",
+    "codex",
+    "kiro",
+    "windows",
+    "macos",
+    "linux"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "lint": "eslint src test scripts",
+    "format:check": "prettier --check .",
+    "pack:check": "node scripts/check-package.mjs",
+    "verify": "npm run typecheck && npm run lint && npm run format:check && npm test && npm run pack:check"
+  },
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^22.19.0",
+    "eslint": "^10.12.0",
+    "prettier": "^3.9.9",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.71.1"
+  }
+}

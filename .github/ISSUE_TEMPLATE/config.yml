@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Account or customer support
+    url: https://noxgild.com/support
+    about: Use Noxgild support for account, billing, or customer-specific help.
+  - name: Security reporting
+    url: https://noxgild.com/security
+    about: Do not disclose an unpatched vulnerability in a public issue.
