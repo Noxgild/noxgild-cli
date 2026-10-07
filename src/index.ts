@@ -313,6 +313,9 @@ export async function main(argv = process.argv.slice(2)): Promise<number> {
 }
 
 const invoked = process.argv[1] ? path.resolve(process.argv[1]) : '';
-if (invoked && fileURLToPath(import.meta.url) === invoked) {
+const modulePath = fileURLToPath(import.meta.url);
+const invokedReal = invoked ? await fs.realpath(invoked).catch(() => invoked) : '';
+const moduleReal = await fs.realpath(modulePath).catch(() => modulePath);
+if (invokedReal && moduleReal === invokedReal) {
   process.exitCode = await main();
 }
