@@ -12,7 +12,7 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/package/@noxgild/cli"><img alt="npm version" src="https://img.shields.io/npm/v/@noxgild/cli.svg" /></a>
-  <a href="https://github.com/Noxgild/noxgild-cli/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/Noxgild/noxgild-cli/actions/workflows/ci.yml/badge.svg" /></a>
+
   <img alt="Windows, macOS, Linux" src="https://img.shields.io/badge/platforms-Windows%20%7C%20macOS%20%7C%20Linux-informational" />
   <a href="LICENSE"><img alt="Apache-2.0 license" src="https://img.shields.io/badge/license-Apache--2.0-blue" /></a>
 </p>

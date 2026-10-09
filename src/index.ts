@@ -6,7 +6,7 @@ import { spawn } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 const DEFAULT_ACCOUNT_ORIGIN = 'https://app.noxgild.com';
-export const CLI_VERSION = '1.0.1';
+export const CLI_VERSION = '1.0.2';
 type Platform = 'win32' | 'darwin' | 'linux';
 type Arch = 'x64' | 'arm64';
 
@@ -183,6 +183,8 @@ async function installWindows(grant: any): Promise<void> {
       String(grant.apiBaseUrl),
       '-PairingCode',
       String(grant.pairingCode),
+      '-ApprovedTenantId',
+      String(grant.tenantId ?? ''),
       '-PackageUrl',
       String(grant.packageUrl),
       '-PackageSha256',

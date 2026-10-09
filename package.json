@@ -1,6 +1,6 @@
 {
   "name": "@noxgild/cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Connect Windows, macOS, or Linux computers to Noxgild for controlled MCP access to Machine, Browser, and Desktop capabilities.",
   "type": "module",
   "bin": {
