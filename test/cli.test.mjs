@@ -16,7 +16,7 @@ test('platform and architecture normalization covers the supported public matrix
 });
 
 test('CLI version matches the release source', () => {
-  assert.equal(CLI_VERSION, '1.0.1');
+  assert.equal(CLI_VERSION, '1.0.2');
 });
 
 test('connect uses a short-lived browser approval flow before installation', async (t) => {
